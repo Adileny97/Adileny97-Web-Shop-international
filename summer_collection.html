@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Collection | Your Brand Clothes Shop</title>
+    <link rel="stylesheet" href="summer_collection.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Your Brand</a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="section-header">
+        <h1>Summer Collection</h1>
+        <p>Embrace the warmth with our trendy and comfortable summer styles.</p>
+    </header>
+    <section class="product-grid">
+        <div id="product1" class="product-item">
+            <img src="https://www.omoda.nl/dw/image/v2/BCCT_PRD/on/demandware.static/-/Sites-omoda-master/default/dw670df9bd/44/P158744/303723_5.jpg?sw=1097&sh=1097&sm=fit&sfrm=png&bgcolor=F7F7F7" alt="Summer Product 1">
+            <h3>ydence</h3>
+            <p>€69.99</p>
+            <a href="javascript:void(0);" onclick="addToCart('product1')" class="cta-button">Add to Cart</a>
+        </div>
+        <div id="product2" class="product-item">
+            <img src="https://www.omoda.nl/dw/image/v2/BCCT_PRD/on/demandware.static/-/Sites-outfit-master/nl_NL/v1733929413659/product-sets/outfits/63729_1_3000x3000.jpg?sw=1097&sh=1097&sm=fit&sfrm=jpg&bgcolor=F7F7F7" alt="Summer Product 2">
+            <h3>taupe ydence tops</h3>
+            <p>€89.99</p>
+            <a href="javascript:void(0);" onclick="addToCart('product2')" class="cta-button">Add to Cart</a>
+        </div>
+        <div id="product3" class="product-item">
+            <img src="https://www.omoda.nl/dw/image/v2/BCCT_PRD/on/demandware.static/-/Sites-omoda-master/default/dwbade7da6/44/P158744/303723_1.jpg?sw=1097&sh=1097&sm=fit" alt="Summer Product 3">
+            <h3>t-shirts knitted top kit</h3>
+            <p>€99.99</p>
+            <a href="javascript:void(0);" onclick="addToCart('product3')" class="cta-button">Add to Cart</a>
+        </div>
+    </section>
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-content"></div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Enny Brand Clothes Shop. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+    <script>
+        
+        let cart = [];
+
+        
+        function addToCart(productId) {
+            const productItem = document.getElementById(productId);
+            const productName = productItem.querySelector('h3').innerText;
+            const productPrice = productItem.querySelector('p').innerText;
+            const productImage = productItem.querySelector('img').src;
+
+            let cartItem = {
+                name: productName,
+                price: productPrice,
+                image: productImage
+            };
+
+            cart.push(cartItem);
+            displayCart();
+            alert('Product ' + productName + ' added to cart!');
+        }
+
+        
+        function displayCart() {
+            let cartContent = document.getElementById('cart-content');
+            cartContent.innerHTML = '';
+
+            cart.forEach((item, index) => {
+                cartContent.innerHTML += `
+                    <div class="cart-item">
+                        <img src="${item.image}" alt="${item.name}" width="50">
+                        <span>${item.name}</span>
+                        <span>${item.price}</span>
+                        <button onclick="removeFromCart(${index})">Remove</button>
+                    </div>
+                `;
+            });
+        }
+
+        
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            displayCart();
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', displayCart);
+    </script>
+</body>
+</html>

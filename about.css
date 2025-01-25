@@ -1,0 +1,116 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 2em;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-us p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+/* Brand Story, Sustainability, Team */
+.about-us div {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.about-us p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Contact Information */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 0.5em;
+}
+
+.contact-info ul li a {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+footer ul li a {
+    color: #fff;
+}

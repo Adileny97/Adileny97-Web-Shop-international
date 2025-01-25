@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page | Your Brand Clothes Shop</title>
+    <link rel="stylesheet" href="product_page.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="index.html">Your Brand</a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="product-image">
+            <img src="https://cdn-images.farfetch-contents.com/15/50/68/65/15506865_31477931_1000.jpg" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1>Jacket palm angels </h1>
+            <p class="price">€199.99</p>
+            <p class="description">Detailed description of the product goes here. Highlight the features, materials, and any other important details that customers should know.</p>
+            <a href="javascript:void(0);" onclick="addToCart('product_id')" class="cta-button">Add to Cart</a>
+        </div>
+    </section>
+    <script>
+    function addToCart(productId) {
+        alert('Product ' + productId + ' added to cart!');
+    }
+    </script>
+    <footer>
+        <p>&copy; 2024 Enny Brand Clothes Shop. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+/* Product Details Section */
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+    gap: 2em;
+}
+
+.product-image {
+    flex: 1;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-info {
+    flex: 1;
+    max-width: 500px;
+}
+
+.product-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.product-info .price {
+    font-size: 1.5em;
+    color: #008cba;
+    margin-bottom: 1em;
+}
+
+.product-info .description {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.product-info .cta-button {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    background-color: #008cba;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.product-info .cta-button:hover {
+    background-color: #005f7f;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+footer ul li a {
+    color: #fff;
+}
